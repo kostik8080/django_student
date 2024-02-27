@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% load my_tags %}
+{% block content %}
+<div class="col-12-md-4">
+    <div class="card mb-4 shadow-sm">
+        <img src="{{ object_list.avatar|mymedia }}" alt="">
+
+        <div class="card-body">
+            <p class="card-text">{{ object_list | title }}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
